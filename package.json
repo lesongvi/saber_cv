@@ -1,0 +1,28 @@
+{
+  "name": "vi-test-saber",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-compile src -o dist",
+    "prepublishOnly": "yarn build",
+    "dev:example": "saber cv",
+    "build:example": "saber build cv"
+  },
+  "devDependencies": {
+    "saber": "^0.10.4",
+    "saber-plugin-feed": "^0.4.2",
+    "saber-plugin-query-posts": "^0.4.4",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "vue-compile": "^0.6.0"
+  },
+  "dependencies": {
+    "tinydate": "^1.2.0"
+  },
+  "peerDependencies": {
+    "saber": "^0.10.4",
+    "saber-plugin-query-posts": "^0.4.4"
+  }
+}

@@ -1,0 +1,25 @@
+theme: ../src
+
+siteConfig:
+  url: https://103.130.215.14
+  author: lesongvi
+  email: lesongvi@gmail.com
+  description: Sabertest
+  title: Lê Song Vĩ
+
+themeConfig:
+  nav:
+    - text: Home
+      link: /
+    - text: Dự án
+      link: /projects.html
+    - text: Hồ sơ
+      link: /me.html
+  social:
+    github: lesongvi
+    rss: false
+
+plugins:
+  - resolve: saber-plugin-query-posts
+    options: 
+      atomFeed: false
